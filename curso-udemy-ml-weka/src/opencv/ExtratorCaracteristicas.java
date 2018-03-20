@@ -54,11 +54,11 @@ public class ExtratorCaracteristicas {
             marromBocaHomer = 0;
             cinzaSapatoHomer = 0;
 
-            // Carrega cada imagem do diretório
+            // Carrega cada imagem do diretorio
             IplImage imagemOriginal = cvLoadImage(diretorio.getAbsolutePath() + "\\" + arquivos[i].getName());
             CvSize tamanhoImagemOriginal = cvGetSize(imagemOriginal);
             
-            // Imagem processada - tamanho, profundidade de cores e número de canais de cores
+            // Imagem processada - tamanho, profundidade de cores e numero de canais de cores
             IplImage imagemProcessada = cvCreateImage(tamanhoImagemOriginal, IPL_DEPTH_8U, 3);
             imagemProcessada = cvCloneImage(imagemOriginal);
 
