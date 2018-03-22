@@ -6,7 +6,7 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class Application{
+public class ApplicationLoadArrf{
 	
 	public static void main(String[] args) 
 	throws Exception{
@@ -16,7 +16,7 @@ public class Application{
 		
 		Instances instances = ds.getDataSet();
 		
-		//Classificador da aprendizagem gasta_muito
+		//Classificador da aprendizagem gasta_muito ==> [0, 3]
 		instances.setClassIndex(3);
 		
 		//Algoritmo utilizado na analise
@@ -32,7 +32,7 @@ public class Application{
 		novoItem.setValue(1, "20-39");
 		novoItem.setValue(2, "Sim");
 		
-		//Analise da execução
+		//Análise da execução
 		double result[] = nb.distributionForInstance(novoItem);
 		
 		System.out.println("Não: "+result[0]+" ==>> "+result[0] * 100+" %");
