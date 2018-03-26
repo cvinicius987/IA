@@ -35,6 +35,7 @@ public class ApplicationLoadArrf{
 		//Análise da execução
 		double result[] = nb.distributionForInstance(novoItem);
 		
+		System.out.println(" ======================== Instance ======================== ");
 		System.out.println("Não: "+result[0]+" ==>> "+result[0] * 100+" %");
 		System.out.println("Sim: "+result[1]+" ==>> "+result[1] * 100+" %");
 	}

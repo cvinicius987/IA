@@ -47,10 +47,21 @@ public class ApplicationProgrammatic{
 	 */
 	public static Instances createArff(){
 		
-		String arr[] = {"F,>=40,Nao,Nao", "F,20-39,Sim,Sim", "F,>=40,Nao,Sim", "M,20-39,Nao,Sim",	
-						"F,>=40,Sim,Sim", "M,20-39,Sim,Nao", "F,>=40,Nao,Nao", "F,>=40,Nao,Sim", 
-						"M,>=40,Sim,Nao", "M,20-39,Nao,Sim", "F,>=40,Sim,Nao", "F,20-39,Sim,Nao", 
-						"F,20-39,Sim,Nao", "F,20-39,Nao,Sim", "F,20-39,Nao,Sim"};
+		String arr[] = {"F,>=40,Nao,Nao", 
+						"F,20-39,Sim,Sim", 
+						"F,>=40,Nao,Sim", 
+						"M,20-39,Nao,Sim",	
+						"F,>=40,Sim,Sim", 
+						"M,20-39,Sim,Nao", 
+						"F,>=40,Nao,Nao", 
+						"F,>=40,Nao,Sim", 
+						"M,>=40,Sim,Nao", 
+						"M,20-39,Nao,Sim", 
+						"F,>=40,Sim,Nao", 
+						"F,20-39,Sim,Nao", 
+						"F,20-39,Sim,Nao", 
+						"F,20-39,Nao,Sim", 
+						"F,20-39,Nao,Sim"};
 		
 		ArrayList<Attribute> attrs = new ArrayList<>();
 		
